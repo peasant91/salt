@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeHeader" customModule="regress_code_test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMt-E5-WJW">
+                    <rect key="frame" x="16" y="63.000000000000007" width="358" height="107.66666666666669"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kA-Eu-dP5" customClass="BaseLabel" customModule="regress_code_test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="358" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="home_title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woA-4J-XNA" customClass="BaseLabel" customModule="regress_code_test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="38" width="358" height="19.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="home_desc"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrp-jq-76h" customClass="BaseButton" customModule="regress_code_test" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="73.333333333333343" width="75" height="34.333333333333343"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localized" value="logout"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="logoutButtonTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="d82-Bl-gio"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7kA-Eu-dP5" firstAttribute="leading" secondItem="oMt-E5-WJW" secondAttribute="leading" id="7f3-wz-wD5"/>
+                        <constraint firstAttribute="bottom" secondItem="Rrp-jq-76h" secondAttribute="bottom" id="9v4-Nx-zuY"/>
+                        <constraint firstItem="Rrp-jq-76h" firstAttribute="top" secondItem="woA-4J-XNA" secondAttribute="bottom" constant="16" id="B1D-ma-aiB"/>
+                        <constraint firstAttribute="trailing" secondItem="woA-4J-XNA" secondAttribute="trailing" id="COl-QB-Z8h"/>
+                        <constraint firstItem="7kA-Eu-dP5" firstAttribute="top" secondItem="oMt-E5-WJW" secondAttribute="top" id="Fs5-3N-8ns"/>
+                        <constraint firstItem="Rrp-jq-76h" firstAttribute="leading" secondItem="oMt-E5-WJW" secondAttribute="leading" id="NRx-Dv-oIy"/>
+                        <constraint firstItem="woA-4J-XNA" firstAttribute="top" secondItem="7kA-Eu-dP5" secondAttribute="bottom" constant="8" id="hLn-MU-uW9"/>
+                        <constraint firstAttribute="trailing" secondItem="7kA-Eu-dP5" secondAttribute="trailing" id="sLg-iA-BiA"/>
+                        <constraint firstItem="woA-4J-XNA" firstAttribute="leading" secondItem="oMt-E5-WJW" secondAttribute="leading" id="swe-X4-vCk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oMt-E5-WJW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="1Wa-KZ-0Vz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oMt-E5-WJW" secondAttribute="bottom" constant="16" id="DZv-aJ-ZMb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oMt-E5-WJW" secondAttribute="trailing" constant="16" id="JEa-NO-4Hh"/>
+                <constraint firstItem="oMt-E5-WJW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Yix-QU-ZVR"/>
+            </constraints>
+            <connections>
+                <outlet property="homeDescLabel" destination="woA-4J-XNA" id="DJ8-eD-eDy"/>
+            </connections>
+            <point key="canvasLocation" x="-65" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

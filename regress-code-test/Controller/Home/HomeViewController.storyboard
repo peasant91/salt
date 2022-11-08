@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="HomeViewController" customModule="regress_code_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh5-f8-evt">
+                                <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKP-do-6kp" customClass="BaseLabel" customModule="regress_code_test" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="11.666666666666664" width="45.666666666666664" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="EVu-QE-X8N">
+                                        <rect key="frame" x="139.33333333333337" y="4.3333333333333357" width="242.66666666666663" height="35.333333333333336"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="GKP-do-6kp" firstAttribute="leading" secondItem="gh5-f8-evt" secondAttribute="leading" constant="8" id="Hvg-Xa-8he"/>
+                                    <constraint firstAttribute="trailing" secondItem="EVu-QE-X8N" secondAttribute="trailing" constant="8" id="LCN-wB-khb"/>
+                                    <constraint firstAttribute="height" constant="44" id="NMR-Lc-poY"/>
+                                    <constraint firstItem="EVu-QE-X8N" firstAttribute="height" secondItem="gh5-f8-evt" secondAttribute="height" multiplier="0.8" id="TZE-g2-zDI"/>
+                                    <constraint firstItem="GKP-do-6kp" firstAttribute="centerY" secondItem="gh5-f8-evt" secondAttribute="centerY" id="YSQ-mF-Oli"/>
+                                    <constraint firstItem="EVu-QE-X8N" firstAttribute="centerY" secondItem="GKP-do-6kp" secondAttribute="centerY" id="ZxV-Sj-Smb"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BMG-Ib-rDr">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gh5-f8-evt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="79g-DS-cQt"/>
+                            <constraint firstItem="gh5-f8-evt" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Bad-JC-Jvt"/>
+                            <constraint firstItem="BMG-Ib-rDr" firstAttribute="top" secondItem="gh5-f8-evt" secondAttribute="bottom" id="P3H-P4-0yt"/>
+                            <constraint firstItem="BMG-Ib-rDr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="TQZ-iD-Qg9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gh5-f8-evt" secondAttribute="trailing" id="ZW8-Q1-XHM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="BMG-Ib-rDr" secondAttribute="bottom" id="xuF-x2-KoH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BMG-Ib-rDr" secondAttribute="trailing" id="zU6-tS-bNL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="BMG-Ib-rDr" id="tFW-2g-Elg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="242.66667175292969" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

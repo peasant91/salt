@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  regress-code-test
+
+  Created by Kevin Raymond on 08/11/22.
+  
+*/
+
+"login_title" = "Login into your account";
+"login_desc" = "Please login using your registered account";
+"email_title" = "Email";
+"password_title" = "Password";
+"term_cond_checkbox" = "I agree with Term and Policy";
+"login" = "Log In";
+"home_title" = "Welcome to Our App";
+"home_desc" = "You are using %@ to login.";
+"logout" = "Logout";
